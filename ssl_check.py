@@ -2,7 +2,7 @@ import requests
 import time
 import sys
 
-def check_ssl_with_incompatibility(domain, output_file):
+def check_ssl_Vulnerabilities(domain, output_file):
     with open(output_file, "w") as file:
         file.write(f"Scanned for Vulnerabilities and Grade for {domain}:\n\n")
         
@@ -69,6 +69,6 @@ if __name__ == "__main__":
     domain_to_check = sys.argv[1]
     output_file_path = "ssl_scan_results.txt"
     
-    check_ssl_with_incompatibility(domain_to_check, output_file_path)
+    check_ssl_Vulnerabilities(domain_to_check, output_file_path)
     
     print_file_contents(output_file_path)
