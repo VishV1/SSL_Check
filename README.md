@@ -1,5 +1,7 @@
+Usage:
 
-
+      Build: docker build  -t  <image_name>  .
+      RUN: docker run <Image_name> <domain_name>
 
 1. How would you scale this script and run it with resiliency to e.g. handle 1000s of domains?**
    
